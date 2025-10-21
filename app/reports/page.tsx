@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { format } from 'date-fns';
-import Image from 'next/image';
 import ReportCard from '@/components/ReportCard';
 import SearchFilters from '@/components/SearchFilters';
 import Pagination from '@/components/Pagination';
 import NavigationButton from '@/components/NavigationButton';
+import Logo from '@/components/Logo';
 
 interface Report {
   Category: string;
@@ -98,13 +98,7 @@ export default function BSPReportsDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-start py-6">
             <div className="space-y-4">
-              <Image 
-                src="/logo.png" 
-                alt="Etibank Logo" 
-                width={280} 
-                height={120}
-                className="h-auto"
-              />
+              <Logo />
               <div>
                 <h1 className="text-3xl font-bold text-gray-900">BSP Regulatory Reports Dashboard</h1>
                 <p className="text-gray-600 mt-1">Manage and track Bangko Sentral ng Pilipinas regulatory reports</p>

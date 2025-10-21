@@ -1,10 +1,10 @@
 import { promises as fs } from "fs";
 import path from "path";
-import Image from "next/image";
 
 import { PoliciesTable } from "@/components/policies-table";
 import { Policy, PolicyStatus } from "@/types/policy";
 import NavigationButton from "../components/NavigationButton";
+import Logo from "@/components/Logo";
 
 async function getPolicies(): Promise<Policy[]> {
   const dataPath = path.join(process.cwd(), "data", "rural_bank_docs.json");
@@ -71,22 +71,17 @@ export default async function ComplianceDashboard() {
   const summary = getSummary(policies);
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-6xl flex-col gap-10 px-6 py-10">
-      <section className="flex flex-col gap-4 border-b border-neutral-200 pb-10">
-        <div className="space-y-4">
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="space-y-4">
-            <Image 
-              src="/logo.png" 
-              alt="Etibank Logo" 
-              width={280} 
-              height={120}
-              className="h-auto"
-            />
+            <Logo />
             <div>
-              <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
+              <h1 className="text-3xl font-bold text-gray-900">
                 Rural Bank Compliance Command Center
               </h1>
-              <p className="mt-2 max-w-3xl text-sm text-neutral-600">
+              <p className="mt-2 text-gray-600">
                 Monitors mandatory policies for rural banking operations under BSP
                 supervision. Updated by the Compliance Officer to ensure
                 adherence to prudential, AML/CFT, governance, and consumer
@@ -94,6 +89,11 @@ export default async function ComplianceDashboard() {
               </p>
             </div>
           </div>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <section className="flex flex-col gap-4 border-b border-neutral-200 pb-10">
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-sm">
@@ -122,10 +122,9 @@ export default async function ComplianceDashboard() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="flex flex-col gap-6">
+        <section className="flex flex-col gap-6">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-xl font-semibold text-neutral-900">
@@ -152,7 +151,8 @@ export default async function ComplianceDashboard() {
 
         <PoliciesTable data={policies} />
       </section>
-    </main>
+      </main>
+    </div>
   );
 }
 
