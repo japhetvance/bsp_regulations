@@ -1,0 +1,113 @@
+[
+  {
+    "id": "policy-001",
+    "title": "Minimum Capital Requirement",
+    "category": "Financial Soundness",
+    "status": "Compliant",
+    "proof": "Certification of paid-up capital at PHP 55M dated 2025-02-15 filed with BSP Regional Office.",
+    "lastReviewed": "2025-02-20",
+    "nextDeadline": "2025-12-31",
+    "bspReference": "BSP Circular No. 1151",
+    "priority": "High"
+  },
+  {
+    "id": "policy-002",
+    "title": "Risk-Based Capital Adequacy (Basel III)",
+    "category": "Risk Management",
+    "status": "Not Compliant",
+    "proof": "Capital adequacy ratio at 9.4% vs. 10% minimum per Q2 2025 CAR report; board remediation plan pending approval.",
+    "lastReviewed": "2025-06-30",
+    "nextDeadline": "2025-09-30",
+    "bspReference": "BSP Circular No. 538 / Basel III",
+    "priority": "High"
+  },
+  {
+    "id": "policy-003",
+    "title": "Agri-Agra Credit Compliance",
+    "category": "Lending Compliance",
+    "status": "Outdated",
+    "proof": "Latest compliance certificate covers FY2023; FY2024 submission still under validation with DA.",
+    "lastReviewed": "2024-12-15",
+    "nextDeadline": "2025-07-31",
+    "bspReference": "BSP Circular No. 1111",
+    "priority": "Medium"
+  },
+  {
+    "id": "policy-004",
+    "title": "Anti-Money Laundering Program",
+    "category": "AML/CFT",
+    "status": "Compliant",
+    "proof": "Independent AML audit completed 2025-04-05 with zero high-risk findings; STR submissions up to date.",
+    "lastReviewed": "2025-04-10",
+    "nextDeadline": "2026-04-10",
+    "bspReference": "BSP Circular No. 706",
+    "priority": "High"
+  },
+  {
+    "id": "policy-005",
+    "title": "Know Your Customer (KYC) Updates",
+    "category": "AML/CFT",
+    "status": "Outdated",
+    "proof": "Enhanced due diligence checklist revised last 2023; awaiting board approval for 2025 version.",
+    "lastReviewed": "2023-11-22",
+    "nextDeadline": "2025-08-15",
+    "bspReference": "BSP Circular No. 950",
+    "priority": "Medium"
+  },
+  {
+    "id": "policy-006",
+    "title": "Liquidity Coverage Ratio",
+    "category": "Liquidity Management",
+    "status": "Compliant",
+    "proof": "Average LCR at 112% for Q2 2025 with daily monitoring dashboard signed by Treasury Head.",
+    "lastReviewed": "2025-06-25",
+    "nextDeadline": "2025-09-30",
+    "bspReference": "BSP Circular No. 905",
+    "priority": "High"
+  },
+  {
+    "id": "policy-007",
+    "title": "Corporate Governance Manual",
+    "category": "Governance",
+    "status": "Compliant",
+    "proof": "Revised manual approved by BSP on 2025-01-18; directors signed acknowledgments on 2025-02-01.",
+    "lastReviewed": "2025-02-01",
+    "nextDeadline": "2026-02-01",
+    "bspReference": "BSP Circular No. 969",
+    "priority": "Medium"
+  },
+  {
+    "id": "policy-008",
+    "title": "Consumer Protection Framework",
+    "category": "Consumer Protection",
+    "status": "Not Compliant",
+    "proof": "Customer assistance unit backlog at 18 cases beyond 7-day SLA; process gap noted in 2025 internal audit.",
+    "lastReviewed": "2025-05-30",
+    "nextDeadline": "2025-07-15",
+    "bspReference": "BSP Circular No. 857",
+    "priority": "High"
+  },
+  {
+    "id": "policy-009",
+    "title": "IT Risk Management Framework",
+    "category": "Operational Risk",
+    "status": "Outdated",
+    "proof": "Business impact analysis last run 2023; pending 2025 vulnerability assessment report consolidation.",
+    "lastReviewed": "2023-10-05",
+    "nextDeadline": "2025-09-01",
+    "bspReference": "BSP Circular No. 808",
+    "priority": "High"
+  },
+  {
+    "id": "policy-010",
+    "title": "Business Continuity Management",
+    "category": "Operational Resilience",
+    "status": "Compliant",
+    "proof": "Tabletop exercise conducted 2025-03-12 covering typhoon scenario; corrective actions closed 2025-04-02.",
+    "lastReviewed": "2025-04-05",
+    "nextDeadline": "2025-12-15",
+    "bspReference": "BSP Circular No. 951",
+    "priority": "Medium"
+  }
+]
+
