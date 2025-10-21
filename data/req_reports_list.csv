@@ -1,0 +1,317 @@
+﻿Category,Form No.,MOR Ref.,Report Title,Frequency,Submission Deadline,Submission Procedure / E-mail Address
+PRIMARY REPORTS,C. RBs / Coop Banks,A-1,Financial Reporting Package (FRP),,,
+,,"Section 172 (Cir. No. 903 dated 02.29.16, M-008 dated 06.23.16, Cir. No. 963 dated 06.27.17, M-028 dated 09.11.17, and Cir. No. 976 dated 10.10.17)",Balance Sheet (FRP) - Solo basis (head office and branches),Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,Balance Sheet (FRP) - Consolidated basis (together with applicable schedules),Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,Income Statement (FRP) - Solo basis (head office and branches),Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,Income Statement (FRP) - Consolidated basis (together with applicable schedules),Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,Schedules (Solo Report):,,,
+,,,1. Checks and Other Cash Items (COCI),Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,2. Due from Other Banks,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,3. Financial Assets Held for Trading,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"3a - Breakdown of Held for Trading (HFT) Financial Assets Purchased/Sold/Lent Under Repurchase Agreements, Certificates of Assignment/Participation with Recourse, Securities Lending and Borrowing Agreements",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,4 - Derivatives Held for Trading (HFT),Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,4a - Derivatives Held for Trading Matrix of Counterparty and Type of Derivative Contracts,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,5 - Financial Assets Designated at Fair Value through Profit or Loss,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,6 - Available-for-Sale Financial Assets,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"6a - Breakdown of Available-for-Sale Financial Assets Purchased/Sold/Lent Under Repurchase Agreements, Certificates of Assignment/Participation with Recourse, Securities Lending and Borrowing Agreements",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,6b to 6b3 - Available-for-Sale Financial Assets Classified as to Status,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,6c to 6c3 - Available-for-Sale Financial Assets Movements in Allowances for Credit Losses,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,7 - Held to Maturity (HTM) Financial Asset,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"7a - Breakdown of Held to Maturity Financial Assets Purchased/Sold/Lent Under Repurchase Agreements, Certificates of Assignment/Participation with Recourse, Securities Lending and Borrowing Agreements",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,7b - Fair Value of Held to Maturity (HTM) Financial Asset,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,7c to 7c3 - Held to Maturity Financial Assets Classified as to Status,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,7d to 7d3 - Held to Maturity Financial Assets Movements in Allowances for Credit Losses,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,8 - Unquoted Debt Securities Classified as Loans,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,8a - Fair Value of Unquoted Debt Securities Classified as Loans,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,8b to 8b3 - Unquoted Debt Securities Classified as Loans Classified as to Status,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,8c to 8c3 - Unquoted Debt Securities Classified as Loans Movements in Allowances for Credit Losses,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,9 - Investment in Non-Marketable Equity Securities,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,10 - Interbank Loans Receivables,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11 - Loans and Receivables – Others,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11a to 11a3 - Loans and Receivables – Others Classified as to Status,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11b to 11b3 - Restructured Loans and Receivables Classified as to Status,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11c to 11c3 - Loans and Receivables – Others Movements in Allowances for Credit Losses,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11d to 11d3 - Gross Loans and Receivables – Others Classified as to Type of Business/Industry of Counterparty,Monthly,15 banking days after end of reference month,sdcrb-frp@bsp.gov.ph
+,,,11e to 11e3 - Loans and Receivables – Others Classified as to Status Per PAS 39,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,"11f - Schedule of Agri/Agra SME, DIL and Microfinance Loans and Receivables Under Schedule 11 Classified as to Counterparty",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"12 - Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"12a to 12a3 - Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions Matrix of Counterparty and Issuer of Collateral Securities",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13 - Fair Value Adjustments in Hedge Accounting,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13a - Derivatives Held for Fair Value Hedge,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13b - Derivatives Held for Cash Flow Hedge,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13c - Derivatives Held for Hedges of Net Investment in Foreign Operations,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13d - Derivatives Held for Portfolio Hedge of Interest Rate Risk (Marked to Market Amount),Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,14 - Accrued Interest Income/Expense from Financial Assets and Liabilities,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15 - Equity Investment in Subsidiaries, Associates and Joint Ventures",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15a - Investment in Subsidiaries, Associates and Joint Arrangements - Classified as to Nature of Business",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15b - Details of Equity Investment in Subsidiaries, Associates and Joint Ventures",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"16 - Bank Premises, Furniture, Fixture and Equipment",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,17 - Real and Other Properties Acquired / Non-Current Assets Held for Sale,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,17a - Aging of ROPA and NCAHS Accounts,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,17b - Movement in ROPA and NCAHS,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,18 - Schedule of Tax Assets and Liabilities,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,19 - Other Assets,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,20 - Breakdown of Due from and Due to Head Office / Branches / Agencies Abroad - Philippine Branch of a Foreign Bank,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,21 - Liability for Short Position,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,22 - Deposit Liabilities Classified as to Type of Deposit,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,22a - Deposit Liabilities by Size of Accounts Excluding Deposits in Foreign Offices / Branches,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,23 - Due to Other Banks,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,24 - Bills Payable,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"25 - Bonds Payable, Unsecured Subordinated Debt and Redeemable Preferred Shares",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,26 - Fair Value of Financial Liabilities,Annually,15 banking days after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,27 - Financial Liabilities Associated with Transferred Assets,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,28 - Other Liabilities,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29 - Interest Income/Expense from Financial Instruments,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29a - Interest Income from Due from Other Banks Classified as to Type of Deposits,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"29b - Interest Income from Held for Trading, Designated at FVPL, Available for Sale, Held to Maturity Financial Assets and Unquoted Debt Securities Classified as Loans",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29c - Interest Income from Interbank Loans Receivables,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29d to 29d3 - Interest Income from Loans and Receivables - Others - Classified as to Status,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"29e - Interest Income from Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,30a - Interest Expense on Deposit Liabilities Classified as to Type of Deposit,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,30b - Interest Expense on Bills Payable,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"30c - Interest Expense on Bonds Payable, Unsecured Subordinated Debt and Redeemable Preferred Shares",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,31 - Dividend Income,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,32 - Gains/(Losses) on Financial Assets and Liabilities Held for Trading,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,33 - Gains/(Losses) from Sale/Redemption/Derecognition of Non-Trading Financial Assets and Liabilities,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,34 - Compensation/Fringe Benefits,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,35 - Other Administrative Expenses,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,36 - Depreciation/Amortization Expense,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,37 - Impairment Loss,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,38 - Off-Balance Sheet,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"38a, 38a1, 38a3 & 38a4 - Report by the PERA Administrator on Personal Equity and Retirement Account",Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,39 & 39a - Residual Maturity Performing Financial Assets and Financial Liabilities,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,40 & 40a - Repricing - Performing Financial Assets and Financial Liabilities,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,41 - Investment in Debt Instruments Issued by LGUs and Loans Granted to LGUs,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,42 - Disclosure of Due From FCDU/RBU and Due To FCDU/RBU,Quarterly,15 banking days after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,Schedules (Consolidated Report):,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,1 - Checks and Other Cash Items,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,2 - Due from Other Banks,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,3 - Financial Assets Held for Trading,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"3a - Breakdown of Held for Trading (HFT) Financial Assets Purchased/Sold/Lent Under Repurchase Agreements, Certificates of Assignment/Participation with Recourse, Securities Lending and Borrowing Agreements",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,4 - Derivatives Held for Trading (HFT),Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,4a - Derivatives Held for Trading Matrix of Counterparty and Type of Derivative Contracts,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,5 - Financial Assets Designated at Fair Value through Profit or Loss,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,6 - Available-for-Sale Financial Assets,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"6a - Breakdown of Available-for-Sale Financial Assets Purchased/Sold/Lent Under Repurchase Agreements, Certificates of Assignment/Participation with Recourse, Securities Lending and Borrowing Agreements",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,6b - Available-for-Sale Financial Assets - Classified as to Status,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,6c - Available-for-Sale Financial Assets Movements in Allowances for Credit Losses,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,7 - Held to Maturity (HTM) Financial Asset,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"7a - Breakdown of Held to Maturity Financial Assets Purchased/Sold/Lent Under Repurchase Agreements, Certificates of Assignment/Participation with Recourse, Securities Lending and Borrowing Agreements",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,7b - Fair Value of Held to Maturity (HTM) Financial Assets,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,7c - Held to Maturity Financial Assets Classified as to Status,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,7d - Held to Maturity Financial Assets Movements in Allowances for Credit Losses,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,8 - Unquoted Debt Securities Classified as Loans,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,8a - Fair Value of Unquoted Debt Securities Classified as to Status,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,8b - Unquoted Debt Securities Classified as Loans Classified as to Status,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,8c - Unquoted Debt Securities Classified as Loans Movements in Allowances for Credit Loans,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,9 - Investment in Non-Marketable Equity Securities,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,10 - Interbank Loans Receivables,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11 - Loans and Receivables – Others,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11a - Loans and Receivables – Others Classified as to Status,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11b - Restructured Loans and Receivables Classified as to Status,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11c - Loans and Receivables – Others Movements in Allowances for Credit Losses,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11d - Gross Loans and Receivables – Others Classified as to Type of Business/Industry of Counterparty,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11e - Loans and Receivables – Others Classified as to Status per PAS 39,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,"11f - Schedule of Agri/Agra, Microfinance and SME Loans and Receivables Classified as to Counterparty",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"12 - Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"12a - Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions Matrix of Counterparty and Issuer of Collateral Securities",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13 - Fair Value Adjustments in Hedge Accounting,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13a - Derivatives Held for Fair Value Hedge,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13b - Derivatives Held for Cash Flow Hedge,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13c - Derivatives Held for Hedges of Net Investment in Foreign Operations,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,13d - Derivatives Held for Portfolio Hedge of Interest Rate Risk (Marked to Market Amount),Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,14 - Accrued Interest Income/Expense from Financial Assets and Liabilities,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15 - Equity Investment in Subsidiaries, Associates and Joint Ventures",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15a - Equity Investment in Subsidiaries, Associates and Joint Arrangements - Classified as to Nature of Business",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15b - Details of Equity Investment in Subsidiaries, Associates and Joint Ventures",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"16 - Bank Premises, Furniture, Fixture and Equipment",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,17 - Real and Other Properties Acquired / Non-Current Assets Held for Sale,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,17a - Aging of ROPA and NCAHS Accounts,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,17b - Movements in ROPA and NCAHS Accounts,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,18 - Schedule of Tax Assets and Liabilities,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,19 - Other Assets,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,20 - Breakdown of Due from and Due to Head Office / Branches / Agencies Abroad - Philippine Branch of a Foreign Bank,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,21 - Liability for Short Position,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,22 - Deposit Liabilities Classified as to Type of Deposit,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,22a - Deposit Liabilities by Size of Accounts Excluding Deposits in Foreign Offices / Branches,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,23 - Due to Other Banks,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,24 - Bills Payable,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"25 - Bonds Payable, Unsecured Subordinated Debt and Redeemable Preferred Shares",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,26 - Fair Value of Financial Liabilities,Annually,30th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,27 - Financial Liabilities Associated with Transferred Assets,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,28 - Other Liabilities,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29 - Interest Income/Expense from Financial Instruments,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29a - Interest Income from Due from Other Banks Classified as to Type of Deposits,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"29b - Interest Income from Held for Trading, Designated at FVPL, Available for Sale, Held to Maturity Financial Assets and Unquoted Debt Securities Classified as Loans",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29c - Interest Income from Interbank Loans Receivables,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29d - Interest Income from Loans and Receivables - Others - Classified as to Status,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"29e - Interest Income from Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,30a - Interest Expense on Deposit Liabilities,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,30b - Interest Expense on Bills Payable,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"30c - Interest Expense on Bonds Payable, Unsecured Subordinated Debt and Redeemable Preferred Shares",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,31 - Dividend Income,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,32 - Gains/(Losses) on Financial Assets and Liabilities Held for Trading,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,33 - Gains/(Losses) from Sale/Redemption/Derecognition of Non-Trading Financial Assets and Liabilities,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,34 - Compensation/Fringe Benefits,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,35 - Other Administrative Expenses,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,36 - Depreciation/Amortization Expense,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,37 - Impairment Loss,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,38 - Off-Balance Sheet,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"38a, 38a1, 38a3 & 38a4 - Report by the PERA Administrator on Personal Equity and Retirement Account",Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,39 - Residual Maturity Performing Financial Assets and Financial Liabilities,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,40 - Repricing - Performing Financial Assets and Financial Liabilities,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,41 - Investment in Debt Instruments Issued by LGUs and Loans Granted to LGUs,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,42 - Disclosure of Due From FCDU/RBU and Due To FCDU/RBU,Quarterly,30th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"Simplified Financial Reporting (FRP) - For RBs with less complex operations (without FCDU authority, derivatives transactions, and financial allied subsidiaries)",,,
+,,,Balance Sheet (FRP) - Solo basis (head office and branches),Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,Income Statement (FRP) - Solo basis (head office and branches),Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,Schedules (Solo Report):,,,
+,,,1 - Checks and Other Cash Items (COCI),Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,2 - Due from Other Banks Classified as to Type of Deposit,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,6 - Available-for-Sale Financial Assets,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,6b1 - Available-for-Sale Financial Assets Classified as to Status - Peso Accounts,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,7 - Held to Maturity Financial Assets,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,7c1 - Held to Maturity Financial Assets Classified as to Status - Peso Accounts,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,8 - Unquoted Debt Securities Classified as Loans,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,8b1 - Unquoted Debt Securities Classified as Loans Classified as to Status - Peso Accounts,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,9 - Investment in Non-Marketable Equity Securities,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,10 - Interbank Loans Receivables,Quarterly,15th banking day after end of reference quarter,cc: Mail-SDC
+,,,11 - Loans and Receivables – Others,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11a1 - Loans and Receivables – Others Classified as to Status - Peso Accounts,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11b1 - Restructured Loans and Receivables Classified as to Status - Peso Accounts,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11c1 - Loans and Receivables – Others Movements of Allowances for Credit Losses - Peso Accounts,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11d1 - Loans and Receivables – Others (At Amortized Cost) - Peso Accounts,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,11e1 - Loans and Receivables – Others Classified as to Status per PAS 39 – Peso Accounts (For Annual Submission),Annually,15th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,"11f - Schedule of Agri/Agra, SME, DIL and Microfinance Loans and Receivables under Schedule 11 - Classified as to Counterparty",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"12 - Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions - By Counterparty",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,12a1 - Loans and Receivables Arising from Repurchase Agreements and Securities Lending and Borrowing Transactions Matrix of Counterparty and Issuer of Collateral Securities - Peso Accounts,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,14 - Accrued Interest Income/Expense from Financial Assets and Liabilities,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15 - Equity Investment in Subsidiaries, Associates and Joint Ventures",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15a - Equity Investment in Subsidiaries, Associates and Joint Ventures – Classified as to Nature of Business",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"15b - Details of Equity Investment in Subsidiaries, Associates and Joint Ventures",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"16 - Bank Premises, Furniture, Fixture and Equipment",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,17 - Real and Other Properties Acquired / Non-Current Assets Held for Sale,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,17a - Aging of ROPA and NCAHS Accounts,Annually,15th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,17b - Movement in ROPA and NCAHS Accounts,Annually,15th banking day after end of reference year,sdcrb-frp@bsp.gov.ph
+,,,19 - Other Assets,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,22 - Deposit Liabilities - Classified as to Type of Deposit,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,22a - Deposit Liabilities by Size of Accounts Excluding Deposits in Foreign Offices / Branches,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,24 - Bills Payable,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"25 - Bonds Payable, Unsecured Subordinated Debt and Redeemable Preferred Shares",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,27 - Financial Liabilities Associated with Transferred Assets,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,28 - Other Liabilities,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29a - Interest Income from Due from Other Banks - Classified as to Type of Deposit,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"29b - Interest Income from Held for Trading, Designated at FVPL, Available-for-Sale, Held to Maturity Financial Assets and Unquoted",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29c - Interest Income from Interbank Loans Receivables,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,29d1 - Interest Income from Loans and Receivables – Others Classified as to Status - Peso Accounts,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"29e - Interest Income from Loans and Receivables Arising from Repurchase Agreements, Certificates of Assignment/Participation with Recourse and Securities Lending and Borrowing Transactions - By Counterparty",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,30a - Interest Expense on Deposit Liabilities - Classified as to Type of Deposit,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,30b - Interest Expense on Bills Payable,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,"30c - Interest Expense on Bonds Payable, Unsecured Subordinated Debt and Redeemable Preferred Shares",Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,31 - Dividend Income,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,33 - Gains/(Losses) from Sale/Redemption/Derecognition of Non-Trading Financial Assets and Liabilities (Excluding Financial Assets and Liabilities Designated at FV through Profit and Loss and FV Adjustment in Hedge Accounting),Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,34 - Compensation/Fringe Benefits,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,35 - Other Administrative Expenses,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,37 - Impairment Loss,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,38 - Off-Balance Sheet,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,39 - Residual Maturity Performing Financial Assets and Financial Liabilities - Peso Accounts,Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+,,,40 - Repricing Performing Financial Assets and Financial Liabilities - Peso Accounts (Amount in PHP),Quarterly,15th banking day after end of reference quarter,sdcrb-frp@bsp.gov.ph
+A-1,,Section 363,Revised Expanded Report on Real Estate Exposures (solo and consolidated),One-time,Within 45 banking days from 31 March 2018,sdcrb-ree@bsp.gov.ph
+,,"(Cir. No. 976 dated 10.10.17, M-19 dated 06.11.18)",Bank Report (solo report of the bank proper and trust departments of covered banks),Quarterly,Within 30 banking days after end of reference quarter,sdcrb-ree@bsp.gov.ph
+,,,Schedules (Bank Report): • Bank Proper and Trust Department • Schedule 1 - Bank Proper • Schedule 2 - Trust Department,Quarterly,Within 30 banking days after end of reference quarter,sdcrb-ree@bsp.gov.ph
+A-1,,Section 136 (Cir. Nos. 917 dated 07.08.16 and 969 dated 08.22.17),Report on Conglomerate Structures,Annually,30 calendar days after end of calendar year,Appropriate supervising department of the Bangko Sentral
+A-1,,Section 132 (Cir. 969 dated 08.22.17),Replacement of the Chief Risk Officer,As changes occur,5 banking days from time of board approval,Appropriate supervising department of the Bangko Sentral
+A-1,,"Section 123 (M-2022-022 dated 04.20.22, M-024 dated 12.28.16, Cir. No. 963 dated 06.27.17, M-028 dated 09.11.17, and M-038 dated 12.27.17)",Basel III Capital Adequacy Ratio (CAR) Report and Control Prooflist,,,sdcrb-Basel3CAR@bsp.gov.ph
+,,"Section 123 (Cir. Nos. 903 dated 02.29.16, 963 dated 06.27.17, and M-028 dated 09.11.17)",CAR Summary Report - Solo basis,Quarterly,15 banking days after end of reference quarter,sdcrb-Basel3CAR@bsp.gov.ph
+,,,CAR Summary Report - Consolidated basis (for parent banks with subsidiary banks and other financial allied undertakings excluding insurance companies),Quarterly,30 banking days after end of reference quarter,sdcrb-Basel3CAR@bsp.gov.ph
+A-1,,"Section 127 (Cir. Nos. 903 dated 02.29.16, 963 dated 06.27.17, and M-028 dated 09.11.17)",Basel III Leverage Ratio (BLR) Report - Solo basis,Semestral,15 banking days after end of reference semester,sdcrb-leverage@bsp.gov.ph
+,,,Basel III Leverage Ratio (BLR) Report - Consolidated basis (applicable to parent banks with subsidiary banks and financial allied undertakings excluding insurance companies),Semestral,30 banking days after end of reference semester,sdcrb-leverage@bsp.gov.ph
+A-1,,Unnumbered Section 122,Report on Dividends Declared,As changes occur,10th banking/business day after date of dividend declaration,Appropriate supervising department of the Bangko Sentral
+A-1,,Section 299 (Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17),Broker Customer Accounts for Settlement of Customer Trades - Cash Accounts / Securities Accounts (End-of-week balance),Monthly,15 banking days after end of reference month,sdcrb-brokering@bsp.gov.ph
+A-1,,"Section 145 (Cir. No. 1007 dated 06.06.18, M-28 dated 10.05.18, and M-003 dated 02.13.20)",Basel III Net Stable Funding Ratio Report - Solo,Monthly,15 banking days from measurement date,sdcrb-nsfr@bsp.gov.ph
+,,,Basel III Net Stable Funding Ratio Report - Consolidated,Quarterly,30 banking days from measurement date,sdcrb-nsfr@bsp.gov.ph
+A-1,,"Section 145 (M-07 dated 02.22.18, Cir. No. 996 dated 02.08.18, and M-008 dated 03.22.19)",MLR Report - Solo,Quarterly,30 banking days from measurement date,sdcrb-mlr@bsp.gov.ph
+A-1,,Section 361 (Cir. No. 1150 dated 08.23.22),Report on Large Exposures,Semestral,15 banking days after end of reference semester,Department of Supervisory Analytics
+A-2,,Unnumbered Section 125 (Cir. No. 903 dated 02.29.16 and M-039 dated 12.28.17),Basel 1.5 Capital Adequacy Ratio - Solo basis (head office and branches),Quarterly,15th banking day after end of reference quarter,sdcrb-car@bsp.gov.ph
+A-2,,Unnumbered Section 125 (Cir. No. 903 dated 02.29.16 and M-039 dated 12.28.17),"Basel 1.5 Capital Adequacy Ratio - Consolidated basis (parent bank plus subsidiary financial allied undertakings, excluding insurance companies)",Quarterly,30th banking day after end of reference quarter,sdcrb-car@bsp.gov.ph
+A-2,,Unnumbered Section 125 (Cir. No. 903 dated 02.29.16 and M-039 dated 12.28.17),Control Prooflist,,,sdcrb-car@bsp.gov.ph
+A-2,RB/COB Form 1,,Consolidated Daily Report of Condition (CDRC),Weekly,4th banking day after end of reference week,SDC
+A-2,Unnumbered (no prescribed form),Section 132 (Cir. No. 969 dated 08.22.17),Acknowledgment receipt of copies of specific duties and responsibilities of the board of directors and of a director and certification that they fully understand the same,Annually or as directors are elected,30th banking day after date of election,Appropriate supervising department of the Bangko Sentral
+A-2,Unnumbered (no prescribed form),Section 132 (Cir. No. 969 dated 08.22.17),Certification under oath of directors that they have received copies of the general responsibility and specific duties and responsibilities of the board of directors and of a director that they fully understand and accept the same,Upon election as first-time director within a bank or banking group,20th banking day after date of election,Hard copy to appropriate supervising department of the Bangko Sentral
+A-2,Form 2B/2B.1,Section 175 (Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17),Published Balance Sheet / Consolidated Balance Sheet (Before Publication) for Banks (consolidated reports applicable to parent banks with subsidiary banks and other financial allied undertakings),Quarterly,12 banking days from date of Call Letter,sdcrb-pbs@bsp.gov.ph
+A-2,,,Control Prooflist duly notarized and signed by the authorized official of the reporting bank,,,sdcrb-pbs@bsp.gov.ph
+A-2,,,Published Balance Sheet / Consolidated Balance Sheet (together with the publisher's certificate),,20 banking days from the date of the Call Letter,sdcrb-pbs@bsp.gov.ph
+A-2,,"Unnumbered Section 436 (Cir. Nos. 903 dated 02.29.16, 913 dated 06.05.16, M-009 dated 06.23.16, Cir. Nos. 920 dated 08.18.16, 963 dated 06.27.17, and M-028 dated 09.11.17)",Financial Reporting Package for Trust Institution,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,A1 to A2 - Main Report (Balance Sheet),Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,B to B2 - Details of Investments in Debt and Equity Securities,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,C to C2 - Details of Loans and Receivables,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,D to D2 - Wealth/Asset/Fund Management - UITF,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,E - Other Fiduciary Accounts,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,E1 to E1b - Other Fiduciary Services – UITF,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,Income Statement,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,,,Control Prooflist,Quarterly,20 banking days after end of reference quarter,sdcrb-frpti@bsp.gov.ph
+A-2,Unnumbered,Section 173 (Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17),Income Statement on Retail Microfinance Operations,Quarterly,15 banking days after end of reference quarter,sdcrb-micro@bsp.gov.ph
+A-2,,Sections 342 and 289,Report on Microfinance Transactions,Monthly,5th banking day after end of reference month,Original - DLC/BSPRLC
+A-2,RB/COB Form 8,Section 252,Control Prooflist of WRRAR Against Deposit Liabilities,Monthly,5th banking day after end of reference month,sdcrb-wrrar@bsp.gov.ph
+A-2,BSP 7-16-11,Section 173,Consolidated List of Stockholders and Their Stockholdings and Changes Thereto,Annually / Quarterly when changes occur,"30th banking day after end of calendar year and, if changes occur, 12th banking day after end of reference quarter",Original - Appropriate supervising department of the Bangko Sentral
+A-2,RB/COB Form 7,"Section 256 (Cir. No. 963 dated 06.27.17, M-028 dated 09.11.17, and M-003 dated 02.07.18)",Weekly Report on Required and Available Reserves Against Deposit Liabilities (WRRAR),Weekly,4 banking days after end of reference week,sdcrb-wrrar@bsp.gov.ph
+A-2,Unnumbered,"Section 383 (M-2022-036 dated 08.10.22, Cir. No. 963 dated 06.27.17, and M-028 dated 09.11.17)",Report of Selected Branch Accounts,Quarterly,20 banking days after end of reference quarter,sdcrb-bris@bsp.gov.ph
+A-2,,,Selected Balance Sheet Accounts,Quarterly,20 banking days after end of reference quarter,sdcrb-bris@bsp.gov.ph
+A-2,,,Selected Balance Sheet and Income Statement Accounts,Quarterly,20 banking days after end of reference quarter,sdcrb-bris@bsp.gov.ph
+A-2,,,Aging of Loans and Receivables – Others,Quarterly,20 banking days after end of reference quarter,sdcrb-bris@bsp.gov.ph
+A-2,,,Breakdown of Deposit Liabilities,Quarterly,20 banking days after end of reference quarter,sdcrb-bris@bsp.gov.ph
+A-2,,,Bank Loans-to-Deposits Ratio,Quarterly,20 banking days after end of reference quarter,sdcrb-bris@bsp.gov.ph
+A-2,,,"Reconciling Items Outstanding for More than Six (6) Months on the Due From/Due To Head Office, Branches and Agencies Account / Bank Deposit Interest Rate",Quarterly,20 banking days after end of reference quarter,
+A-2,Unnumbered,Section 125 (Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17),"Computation of the Risk-Based Capital Adequacy Ratio Covering Combined Credit, Market, and Operational Risks (for stand-alone RCBs) - Solo basis",Quarterly,15 banking days after end of reference quarter,sdcrb-car@bsp.gov.ph
+A-3,Unnumbered,Section 173,Report on Borrowings of BSP Personnel,Quarterly,15th banking day after end of reference quarter,sdcrb-car@bsp.gov.ph
+A-2,Unnumbered,Appendix 57 (Cir. Nos. 926 dated 09.13.16 and 948 dated 03.01.17),Sworn Certification on Lending to Local Government Units,Semestral,15 banking days after end of reference semester,Hard copy to appropriate supervising department of the Bangko Sentral
+A-3,Unnumbered,Section 346 (Cir. No. 1110 dated 02.24.21),"Certification on Loans and Other Credit Accommodations to Directors, Officers, Stockholders and Their Related Interests/Subsidiaries/Affiliates",Semestral,15th banking day after end of reference semester,Appropriate supervising department of the Bangko Sentral
+A-2,Unnumbered,Appendix 57a (Cir. No. 926 dated 09.13.16 and Cir. No. 948 dated 03.01.17),Sworn Certification on Lending to Borrowing Government Entities,Semestral,15 banking days after end of reference semester,Hard copy to appropriate supervising department of the Bangko Sentral
+,Unnumbered,Section 278,Post Borrowing Report,As transaction occurs,Within 30 calendar days from date of full release of proceeds,DER
+A-2,Unnumbered,Sections 173 and 314 (Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17),Report on Microfinance Products,,,
+A-3,RB/COB Form 5B,"Section 332 (Cir. No. 963 dated 06.27.17, M-028 dated 09.11.17, and M-22 dated 08.10.18)",Report on Compliance with Mandatory Credit Allocation Required under R.A. 6977 (as amended by R.A. Nos. 8289 and 9501) (MSME),Monthly,15 banking days after end of reference month,sdcrb-micro@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332 (same as above),Schedule 1A - Computation of Total Loan Portfolio for Purposes of Determining Amount of Mandatory Credit Allocation for MSMEs,Quarterly,15 banking days after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332 (same as above),Schedule 1A-1 - Wholesale Lending of a Bank to Conduit NBFIs without QB authority other than those for On-Lending to MSMEs,Quarterly,15 banking days after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332 (same as above),Schedule 1A-2 - Loans Granted Under Special Financing Program Other Than for MSMEs,Quarterly,15 banking days after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332 (same as above),Schedule 1A-3 - Loans Granted to MSMEs Other Than to BMBEs which are Funded by Wholesale Lending of or Rediscounted with Another Bank,Quarterly,15 banking days after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,"Section 332 (Cir. No. 963 dated 06.27.17, M-028 dated 09.11.17, and M-22 dated 08.10.18)",Schedule 1B - Details of Eligible Investments for Compliance with the Required Credit Allocation for MSMEs,Quarterly,15th banking day after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332,Schedule 1B-1 - Loans Granted to MSMEs Other than to BMBEs which are Funded by Wholesale Lending of or Rediscounted with Another Bank,Quarterly,15th banking day after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332,Schedule 1B-2 - Wholesale Lending or Rediscounting Facility Granted to Participating Financial Institutions for On-Lending to MSMEs other than to BMBEs,Quarterly,15th banking day after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332,Schedule 2 - Loans Granted to BMBEs,Quarterly,15th banking day after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332,"Schedule 3 - Reconciliation of Loans Granted to MSMEs as Reported Under Schedules 1B, 1B-1, and 2 and FRP Balance of Microfinance and SME Loans",Quarterly,15th banking day after end of reference quarter,sdcrb-sme@bsp.gov.ph
+A-3,RB/COB Form 5B,Section 332,Control Prooflist,Quarterly,15th banking day after end of reference quarter,SDC
+A-3,Unnumbered,"Section 173 (Cir. Nos. 1159 dated 11.04.22, 903 dated 02.29.16, 963 dated 06.27.17, and M-028 dated 09.11.17)",Report on Compliance with the Mandatory AFRD Financing,Quarterly,15th banking day after end of reference quarter,SDC
+A-3,,Section 173,Control Prooflist,Quarterly,15 banking days after end of reference quarter,sdcrb-agra@bsp.gov.ph
+A-3,Unnumbered,"Section 312 (M-002 dated 03.10.16, Cir. No. 963 dated 06.27.17, and M-028 dated 09.11.17)",EPFS Transactions and Indicators,Monthly,15 banking days after end of reference month,sdc-ccbar@bsp.gov.ph
+A-3,Unnumbered,Section 701 (Requirements for banks with pending applications; Reportorial Requirements) (Cir. No. 1033 dated 02.22.19),Changes and Enhancements in EPFS,Semi-annually,15 banking days after end of reference semester,sdc-ccbar@bsp.gov.ph
+A-3,Section 307,(Cir. No. 1156 dated 09.30.22),Report on Business Loan Applications Using SBLAF,Quarterly and Annually,15 banking days from end of reference quarter,Email to DSA
+B,SES Form 6G,Section 173 (Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17); Section 148,Report on Crimes and/or Losses (RCL) - Initial Report,As crime/incident occurs,Not later than ten (10) calendar days from knowledge of crime/incident,sdcrb-rcl@bsp.gov.ph
+B,SES Form 6G,Section 173 (Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17); Section 148,Report on Crimes and/or Losses (RCL) - Complete/Final Report,As crime/incident occurs,Not later than twenty (20) calendar days from termination of investigation,sdcrb-rcl@bsp.gov.ph
+B,,Section 137 (Cir. No. 969 dated 08.22.17),Duly accomplished and notarized authorization form for querying the Bangko Sentral watchlist files,Semestral,15 banking days after end of reference semester,Hard copy to appropriate supervising department of the Bangko Sentral
+B,,,Verified statement of directors/officers that he/she has all the aforesaid qualifications and none of the disqualifications,Upon every election/reelection or appointment/promotion,20th banking day from date of election,Hard copy to appropriate supervising department of the Bangko Sentral
+B,RB/COB Form 19,Section 108,New Schedule of Banking Days/Hours,As necessary,,Hard copy to appropriate supervising department of the Bangko Sentral
+B,Unnumbered (no prescribed form),Section 138 (Cir. No. 969 dated 08.22.17),Report on Disqualification of Directors/Officers,As necessary,7th banking day prior to effectivity of change,Original - Appropriate supervising department of the Bangko Sentral
+B,RB/COB Form 23,Section 143,"Notice/Application for Write-off of Loans, Other Credit Accommodations, Advances and Other Assets (Upon disqualification)",As disqualification occurs,Within 72 hours from receipt of report by the BOD,Original - Appropriate supervising department of the Bangko Sentral
+B,RB/COB Form 23,Section 143,"Notice/Application for Write-off of Loans, Other Credit Accommodations, Advances and Other Assets (As write-off occurs)",As write-off occurs,Within 30 days after every write-off,Original and duplicate - Appropriate supervising department of the Bangko Sentral
+B,RB/COB Form 25,Section 137 (Cir. No. 969 dated 08.22.17),List of Members of the Board of Directors and Officers,As write-off occurs,Within 30 days after every write-off,Original and duplicate - Appropriate supervising department of the Bangko Sentral
+B,RB/COB Form 26,Section 346,"Transmittal of Board Resolution/Written Approval on Credit Accommodation to DOSRI in compliance with Sec. 36, R.A. 8791, as amended",Annually,20th banking day from the annual election of the board of directors,Hard copy to appropriate supervising department of the Bangko Sentral
+B,Unnumbered,Section 342,"Transmittal of Board Resolution/Written Approval on Credit Accommodations to Subsidiaries and/or Affiliates in compliance with Sec. 342 (Loans, Other Credit Accommodations, etc.)",As transaction occurs,20th banking day from date of approval,Hard copy to appropriate supervising department of the Bangko Sentral
+B,,Section 175,Annual Report of Management to Stockholders Covering Results of Operation for the Previous Year,As loan to subsidiaries and/or affiliates is approved,20th banking day from date of approval,Original and duplicate - Appropriate supervising department of the Bangko Sentral
+B,,Section 413,"Waiver of the Confidentiality of Information under Sections 2 and 3 of R.A. No. 1405, as amended",Semestral,Within 7 banking days after end of June and December,Appropriate supervising department of the Bangko Sentral
+B,Unnumbered,Section 136 (Cir. Nos. 917 dated 07.08.16 and 969 dated 08.22.17),Report on Material Related Party Transactions,As transaction occurs,,Appropriate supervising department of the Bangko Sentral
+B,Unnumbered,"(Cir. No. 963 dated 06.27.17, M-028 dated 09.11.17, Cir. 987 dated 12.18.17, and M-016 dated 04.17.18)",Report on the Inventory of Banking Network,Quarterly,15th banking day after end of reference quarter,SDC
+B,Unnumbered,Section 181,Schedule of Bank Deposit Interest Rates,Quarterly,20 banking days after end of reference quarter,sdcrb-ibn@bsp.gov.ph
+B,Unnumbered,(Cir. No. 963 dated 06.27.17 and M-028 dated 09.11.17),Report on Non-Deliverable Forward Transactions against Philippine Peso - Control Prooflist,Quarterly,20 banking days after end of reference quarter,sdcrb-ibn@bsp.gov.ph
+B,Unnumbered,(Cir. No. 963 dated 06.27.17 and M-2017-026 dated 09.11.17),Registration Form (E-Correspondences),As changes occur,,sdcrb-rf@bsp.gov.ph
+B,,(M-17 dated 05.10.18),Complaints Report,Quarterly,Not later than one (1) month after end of every quarter,sdcrb_rf@bsp.gov.ph / sdcrb-bccr@bsp.gov.ph
+B,Form No. 1,Section 702 Schedule 1,Report on Electronic Money Transactions,Quarterly,Not later than one (1) month after end of every quarter,SDC
+B,Unnumbered,"Section 148 (Cir. Nos. 1019 dated 10.31.18, 963 dated 06.27.17, M-028 dated 09.11.17)",IT Profile Report,Annually,25 calendar days from end of reference year,sdcrb-itprofile@bsp.gov.ph
+B,Unnumbered,Section 148,Reportable Major Cyber-Related Incidents,As incidents occur,"Within 2 hours upon discovery, within 24 hours from discovery",citsg@bsp.gov.ph
+B,Unnumbered,Section 148 (Cir. No. 1096 dated 09.16.20),Disruptions of financial services and operations,As disruptions occur,"Within 2 hours upon discovery, within 24 hours from discovery",citsg@bsp.gov.ph
+B,BSD-Form-1,Sections 417 and 424 (Cir. No. 1032 dated 02.15.2019),Quarterly Report on Compliance with the Basic Security Deposit Requirement,Quarterly,20 banking days after end of every quarter,"BSP-Quarterly@bsp.gov.ph, SDC email, appropriate supervising departments"
+B,BSD-PERAForm-1,Section 1121 (Cir. No. 1032 dated 02.15.2019),Security for the faithful performance of Administrators,,,
+B,BSD-Form-2,Sections 417 and 424 (Cir. No. 1032 dated 02.15.2019),Report on Basic Security Deposit Transactions with certification,"On every deposit, withdrawal, transfer",3 banking or business days prior to date of securities transfer,BSD-Transactional@bsp.gov.ph
+B,BSD-Form-2,Sections 417 and 424 (Cir. No. 1032 dated 02.15.2019),Report on Basic Security Deposit Transactions with certification from designated or authorized officer,"On every deposit, withdrawal, replacement or redemption of securities",3 banking or business days prior to date of securities transfer,BSD-Transactional@bsp.gov.ph and to appropriate supervising departments
+B,BSD-PERAForm-2,Section 1121 (Cir. No. 1032 dated 02.15.2019),Security for the faithful performance of Administrators,"On every deposit, withdrawal, replacement or redemption of securities",3 banking or business days prior to date of securities transfer,To appropriate supervising departments
+B,Unnumbered,"Section 315 (M-2022-009 dated 02.07.22, Cir. No. 1096 dated 09.16.20)",DDA Reconciliation Statement,Semestral,15th banking day from end of reference semester,Email address will be provided by FSS
+B,Unnumbered,Cir. No. 1117 dated 05.27.21,Monthly Report on the Sale or Transfer and Investment Transactions of BSFIs under the FIST Act,Monthly,20 banking or business days after end of reference month,Email to the DSA
