@@ -3,6 +3,7 @@ import path from "path";
 
 import { PoliciesTable } from "@/components/policies-table";
 import { Policy } from "@/types/policy";
+import NavigationButton from "../components/NavigationButton";
 
 async function getPolicies(): Promise<Policy[]> {
   const dataPath = path.join(process.cwd(), "data", "policies.json");
@@ -94,15 +95,18 @@ export default async function ComplianceDashboard() {
               Includes proof or reason for each status aligned with BSP circulars.
             </p>
           </div>
-          <div className="text-xs text-neutral-500">
-            Last updated:
-            <span className="ml-2 font-medium text-neutral-700">
-              {new Date().toLocaleDateString("en-PH", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
+          <div className="flex items-center gap-4">
+            <NavigationButton href="/reports" label="View Reports Dashboard" />
+            <div className="text-xs text-neutral-500">
+              Last updated:
+              <span className="ml-2 font-medium text-neutral-700">
+                {new Date().toLocaleDateString("en-PH", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+            </div>
           </div>
         </div>
 

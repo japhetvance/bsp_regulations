@@ -5,6 +5,7 @@ import { format } from 'date-fns';
 import ReportCard from '@/components/ReportCard';
 import SearchFilters from '@/components/SearchFilters';
 import Pagination from '@/components/Pagination';
+import NavigationButton from '@/components/NavigationButton';
 
 interface Report {
   Category: string;
@@ -99,8 +100,11 @@ export default function BSPReportsDashboard() {
               <h1 className="text-3xl font-bold text-gray-900">BSP Regulatory Reports Dashboard</h1>
               <p className="text-gray-600 mt-1">Manage and track Bangko Sentral ng Pilipinas regulatory reports</p>
             </div>
-            <div className="text-sm text-gray-500">
-              Last updated: {format(new Date(), 'MMM dd, yyyy')}
+            <div className="flex items-center gap-4">
+              <NavigationButton href="/" label="View Compliance Dashboard" />
+              <div className="text-sm text-gray-500">
+                Last updated: {format(new Date(), 'MMM dd, yyyy')}
+              </div>
             </div>
           </div>
         </div>
