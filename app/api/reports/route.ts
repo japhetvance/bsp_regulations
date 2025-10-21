@@ -46,20 +46,26 @@ export async function GET(request: NextRequest) {
   // Apply category filter
   if (category && category !== 'all') {
     filteredRecords = filteredRecords.filter(record => 
-      record.Category === category
+      typeof record === 'object' &&
+      record !== null &&
+      'Category' in record &&
+      (record as { Category?: string }).Category === category
     );
   }
 
   // Apply frequency filter
   if (frequency && frequency !== 'all') {
     filteredRecords = filteredRecords.filter(record => 
-      record.Frequency === frequency
+      typeof record === 'object' &&
+      record !== null &&
+      'Frequency' in record &&
+      (record as { Frequency?: string }).Frequency === frequency
     );
   }
 
   // Get unique categories and frequencies for filters
-  const categories = [...new Set(records.map(record => record.Category))].filter(Boolean);
-  const frequencies = [...new Set(records.map(record => record.Frequency))].filter(Boolean);
+  const categories = [...new Set(records.map(record => typeof record === 'object' && record !== null && 'Category' in record ? (record as { Category?: string }).Category : ''))].filter(Boolean);
+  const frequencies = [...new Set(records.map(record => typeof record === 'object' && record !== null && 'Frequency' in record ? (record as { Frequency?: string }).Frequency : ''))].filter(Boolean);
 
   // Pagination
   const startIndex = (page - 1) * limit;

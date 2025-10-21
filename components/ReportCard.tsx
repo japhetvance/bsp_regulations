@@ -136,7 +136,7 @@ export default function ReportCard({ report }: ReportCardProps) {
             </button>
           </div>
           {emailSent && (
-            <p className="mt-2 text-sm font-medium text-green-600">Email sent for demo purposes.</p>
+            <p className="mt-2 text-sm font-medium text-green-600">Email sent</p>
           )}
         </div>
       )}
