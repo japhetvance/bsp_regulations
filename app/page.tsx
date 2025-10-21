@@ -2,13 +2,46 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import { PoliciesTable } from "@/components/policies-table";
-import { Policy } from "@/types/policy";
+import { Policy, PolicyStatus } from "@/types/policy";
 import NavigationButton from "../components/NavigationButton";
 
 async function getPolicies(): Promise<Policy[]> {
-  const dataPath = path.join(process.cwd(), "data", "policies.json");
+  const dataPath = path.join(process.cwd(), "data", "rural_bank.json");
   const raw = await fs.readFile(dataPath, "utf-8");
-  return JSON.parse(raw) as Policy[];
+  const rawData = JSON.parse(raw) as Array<Record<string, string>>;
+
+  return rawData.map((item, index) => {
+    const complianceStatus = normalizeStatus(item["Compliance_Status"]);
+    const policyNumber = extractPolicyNumber(item["PolicyDetails"]);
+
+    return {
+      id: `${policyNumber}-${index}`,
+      title: `Policy Number: ${policyNumber}`,
+      status: complianceStatus,
+      policyDetails: item["PolicyDetails"],
+      complianceGap: item["Compliance_Gap"],
+      bspIssuance: item["BSP Issuance"],
+      bspReference: `BSP Circular ${item["BSP Issuance"]}`,
+      policyText: item["PolicyText"],
+    } satisfies Policy;
+  });
+}
+
+function normalizeStatus(status: string): PolicyStatus {
+  if (status.startsWith("Non-Existent")) {
+    return "Non-Existent";
+  }
+
+  if (status === "Fully Compliant" || status === "Slightly Compliant") {
+    return status;
+  }
+
+  return "Non-Existent";
+}
+
+function extractPolicyNumber(policyDetails: string): string {
+  const match = policyDetails.match(/Policy Number:\s*([^\s]+)/i);
+  return match ? match[1] : `Unknown-${Math.random().toString(36).slice(2, 7)}`;
 }
 
 function getSummary(policies: Policy[]) {
@@ -21,18 +54,18 @@ function getSummary(policies: Policy[]) {
     {
       total: 0,
       byStatus: {
-        Compliant: 0,
-        "Not Compliant": 0,
-        Outdated: 0,
-      },
+        "Fully Compliant": 0,
+        "Slightly Compliant": 0,
+        "Non-Existent": 0,
+      } satisfies Record<PolicyStatus, number>,
     },
   );
 }
 
-const STATUS_COLORS: Record<string, string> = {
-  Compliant: "bg-emerald-500/10 text-emerald-700 border-emerald-200",
-  "Not Compliant": "bg-destructive/10 text-destructive border-destructive/30",
-  Outdated: "bg-amber-500/10 text-amber-700 border-amber-200",
+const STATUS_COLORS: Record<PolicyStatus, string> = {
+  "Fully Compliant": "bg-emerald-500/10 text-emerald-700 border-emerald-200",
+  "Slightly Compliant": "bg-amber-500/10 text-amber-700 border-amber-200",
+  "Non-Existent": "bg-neutral-500/10 text-neutral-600 border-neutral-200",
 };
 
 export default async function ComplianceDashboard() {
@@ -75,7 +108,7 @@ export default async function ComplianceDashboard() {
                   {count}
                 </p>
                 <span
-                  className={`mt-2 inline-flex w-fit items-center rounded-full px-2 py-1 text-xs font-medium ${STATUS_COLORS[status]}`}
+                  className={`mt-2 inline-flex w-fit items-center rounded-full px-2 py-1 text-xs font-medium ${STATUS_COLORS[status as PolicyStatus]}`}
                 >
                   {status}
                 </span>

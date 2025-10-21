@@ -13,20 +13,12 @@ import {
 } from "@/components/ui/table";
 import { StatusBadge } from "@/components/status-badge";
 import { FilterControls } from "@/components/filter-controls";
-import { Policy, PolicyPriority, PolicyStatus } from "@/types/policy";
+import type { Policy, PolicyStatus } from "@/types/policy";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 
-type SortKey = keyof Pick<
-  Policy,
-  | "title"
-  | "category"
-  | "status"
-  | "priority"
-  | "lastReviewed"
-  | "nextDeadline"
->;
+type SortKey = keyof Pick<Policy, "title" | "status">;
 
 type SortDirection = "asc" | "desc";
 
@@ -39,45 +31,35 @@ interface PoliciesTableProps {
   data: Policy[];
 }
 
-const SORTABLE_COLUMNS: SortKey[] = [
-  "title",
-  "category",
-  "status",
-  "priority",
-  "lastReviewed",
-  "nextDeadline",
-];
+const SORTABLE_COLUMNS: SortKey[] = ["title", "status"];
 
-const PRIORITY_CLASSNAMES: Record<PolicyPriority, string> = {
-  High: "text-rose-600",
-  Medium: "text-amber-600",
-  Low: "text-emerald-600",
+const STATUS_ORDER: Record<PolicyStatus, number> = {
+  "Fully Compliant": 1,
+  "Slightly Compliant": 2,
+  "Non-Existent": 3,
 };
 
-const PRIORITY_ORDER: Record<PolicyPriority, number> = {
-  High: 1,
-  Medium: 2,
-  Low: 3,
-};
+function extractPolicyBody(details: string): string {
+  const afterNumber = details.replace(/^Policy Number:\s*[^\s]+\s*/, "");
+  return formatMultilineText(afterNumber.trim());
+}
+
+function formatMultilineText(text: string): string {
+  if (!text) return "";
+  return text
+    .replace(/\s{2,}-/g, "\n-" )
+    .replace(/\s{2,}/g, "\n")
+    .trim();
+}
 
 export function PoliciesTable({ data }: PoliciesTableProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState<PolicyStatus | "all">("all");
-  const [categoryFilter, setCategoryFilter] = useState<string | "all">("all");
-  const [priorityFilter, setPriorityFilter] = useState<PolicyPriority | "all">(
-    "all",
-  );
-  const [expandedRow, setExpandedRow] = useState<string | null>(null);
+  const [expandedRow, setExpandedRow] = useState<{ id: string; type: "policy" | "status" } | null>(null);
   const [sortState, setSortState] = useState<SortState>({
-    key: "priority",
+    key: "title",
     direction: "asc",
   });
-
-  const categories = useMemo(() => {
-    const unique = new Set<string>();
-    data.forEach((policy) => unique.add(policy.category));
-    return Array.from(unique).sort();
-  }, [data]);
 
   const filteredData = useMemo(() => {
     const normalizedSearch = searchTerm.trim().toLowerCase();
@@ -87,8 +69,8 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
         ? [
             policy.title,
             policy.bspReference,
-            policy.proof,
-            policy.category,
+            policy.complianceGap,
+            policy.policyDetails,
           ]
             .join(" ")
             .toLowerCase()
@@ -98,30 +80,20 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
       const matchesStatus =
         statusFilter === "all" ? true : policy.status === statusFilter;
 
-      const matchesCategory =
-        categoryFilter === "all" ? true : policy.category === categoryFilter;
-
-      const matchesPriority =
-        priorityFilter === "all" ? true : policy.priority === priorityFilter;
-
-      return matchesSearch && matchesStatus && matchesCategory && matchesPriority;
+      return matchesSearch && matchesStatus;
     });
-  }, [data, searchTerm, statusFilter, categoryFilter, priorityFilter]);
+  }, [data, searchTerm, statusFilter]);
 
   const sortedData = useMemo(() => {
     const sorted = [...filteredData].sort((a, b) => {
       const valueA = a[sortState.key];
       const valueB = b[sortState.key];
 
-      if (sortState.key === "priority") {
-        return PRIORITY_ORDER[valueA as PolicyPriority] - PRIORITY_ORDER[valueB as PolicyPriority];
+      if (sortState.key === "status") {
+        return STATUS_ORDER[valueA as PolicyStatus] - STATUS_ORDER[valueB as PolicyStatus];
       }
 
       if (typeof valueA === "string" && typeof valueB === "string") {
-        if (sortState.key === "lastReviewed" || sortState.key === "nextDeadline") {
-          return new Date(valueA).getTime() - new Date(valueB).getTime();
-        }
-
         return valueA.localeCompare(valueB);
       }
 
@@ -134,8 +106,6 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
   const resetFilters = () => {
     setSearchTerm("");
     setStatusFilter("all");
-    setCategoryFilter("all");
-    setPriorityFilter("all");
   };
 
   const handleSort = (key: SortKey) => {
@@ -154,6 +124,16 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
     });
   };
 
+  const toggleExpansion = (id: string, type: "policy" | "status") => {
+    setExpandedRow((prev) => {
+      if (prev?.id === id && prev.type === type) {
+        return null;
+      }
+
+      return { id, type };
+    });
+  };
+
   return (
     <Card className="border-none shadow-none">
       <CardContent className="px-0">
@@ -162,13 +142,6 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
           onSearchTermChange={setSearchTerm}
           statusFilter={statusFilter}
           onStatusFilterChange={setStatusFilter}
-          categoryFilter={categoryFilter}
-          onCategoryFilterChange={(value) =>
-            setCategoryFilter(value === "all" ? "all" : value)
-          }
-          priorityFilter={priorityFilter}
-          onPriorityFilterChange={setPriorityFilter}
-          categories={categories}
           onReset={resetFilters}
         />
 
@@ -183,17 +156,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                       className="-ml-2 flex items-center gap-1 text-sm font-semibold"
                       onClick={() => handleSort(columnKey)}
                     >
-                      {columnKey === "title"
-                        ? "Policy"
-                        : columnKey === "lastReviewed"
-                          ? "Last Reviewed"
-                          : columnKey === "nextDeadline"
-                            ? "Next Deadline"
-                            : columnKey === "priority"
-                              ? "Priority"
-                              : columnKey === "category"
-                                ? "Category"
-                                : "Status"}
+                      {columnKey === "title" ? "Policy" : "Status"}
                       {sortState.key === columnKey ? (
                         sortState.direction === "asc" ? (
                           <ChevronUp className="h-4 w-4" />
@@ -204,70 +167,39 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                     </Button>
                   </TableHead>
                 ))}
-                <TableHead className="w-[180px]">BSP Reference</TableHead>
+                <TableHead className="w-[200px]">BSP Reference</TableHead>
               </TableRow>
             </TableHeader>
 
             <TableBody>
               {sortedData.map((policy) => {
-                const isExpanded = expandedRow === policy.id;
+                const isPolicyExpanded =
+                  expandedRow?.id === policy.id && expandedRow.type === "policy";
+                const isStatusExpanded =
+                  expandedRow?.id === policy.id && expandedRow.type === "status";
 
                 return (
                   <Fragment key={policy.id}>
-                    <TableRow key={policy.id} className="align-top">
+                    <TableRow className="align-top">
                       <TableCell className="font-medium">
-                        <div className="flex flex-col gap-1">
-                          <span>{policy.title}</span>
-                          <span className="text-xs text-neutral-500">
-                            {policy.category}
-                          </span>
-                        </div>
+                        <button
+                          type="button"
+                          onClick={() => toggleExpansion(policy.id, "policy")}
+                          className={cn(
+                            "flex w-full flex-col gap-1 text-left text-sm font-semibold text-primary",
+                            "hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:ring-offset-2",
+                          )}
+                          aria-expanded={isPolicyExpanded}
+                        >
+                          {policy.title}
+                        </button>
                       </TableCell>
-                      <TableCell>{policy.category}</TableCell>
                       <TableCell>
                         <StatusBadge
                           status={policy.status}
-                          onClick={() =>
-                            setExpandedRow((prev) =>
-                              prev === policy.id ? null : policy.id,
-                            )
-                          }
-                          isExpanded={isExpanded}
+                          onClick={() => toggleExpansion(policy.id, "status")}
+                          isExpanded={isStatusExpanded}
                         />
-                      </TableCell>
-                      <TableCell>
-                        <span
-                          className={cn(
-                            "text-sm font-semibold",
-                            PRIORITY_CLASSNAMES[policy.priority],
-                          )}
-                        >
-                          {policy.priority}
-                        </span>
-                      </TableCell>
-                      <TableCell>
-                        <time className="text-sm text-neutral-600">
-                          {new Date(policy.lastReviewed).toLocaleDateString(
-                            "en-PH",
-                            {
-                              year: "numeric",
-                              month: "short",
-                              day: "numeric",
-                            },
-                          )}
-                        </time>
-                      </TableCell>
-                      <TableCell>
-                        <time className="text-sm font-semibold text-neutral-800">
-                          {new Date(policy.nextDeadline).toLocaleDateString(
-                            "en-PH",
-                            {
-                              year: "numeric",
-                              month: "short",
-                              day: "numeric",
-                            },
-                          )}
-                        </time>
                       </TableCell>
                       <TableCell>
                         <a
@@ -280,15 +212,26 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                           <ExternalLink className="h-3 w-3" />
                         </a>
                       </TableCell>
-                      
                     </TableRow>
 
-                    {isExpanded ? (
-                      <TableRow key={`${policy.id}-details`}>
-                        <TableCell colSpan={7} className="bg-neutral-50">
+                    {isPolicyExpanded ? (
+                      <TableRow>
+                        <TableCell colSpan={3} className="bg-neutral-50">
                           <div className="flex flex-col gap-2 p-4">
-                            <p className="text-sm text-neutral-700">
-                              {policy.proof}
+                            <p className="whitespace-pre-wrap text-sm text-neutral-700">
+                              {extractPolicyBody(policy.policyDetails)}
+                            </p>
+                          </div>
+                        </TableCell>
+                      </TableRow>
+                    ) : null}
+
+                    {isStatusExpanded ? (
+                      <TableRow>
+                        <TableCell colSpan={3} className="bg-neutral-50">
+                          <div className="flex flex-col gap-2 p-4">
+                            <p className="whitespace-pre-wrap text-sm text-neutral-700">
+                              {formatMultilineText(policy.complianceGap)}
                             </p>
                           </div>
                         </TableCell>

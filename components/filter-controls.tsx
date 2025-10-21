@@ -10,18 +10,13 @@ import {
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Search, Filter, RotateCcw } from "lucide-react";
-import { PolicyPriority, PolicyStatus } from "@/types/policy";
+import type { PolicyStatus } from "@/types/policy";
 
 interface FilterControlsProps {
   searchTerm: string;
   onSearchTermChange: (value: string) => void;
   statusFilter: PolicyStatus | "all";
   onStatusFilterChange: (value: PolicyStatus | "all") => void;
-  categoryFilter: string | "all";
-  onCategoryFilterChange: (value: string | "all") => void;
-  priorityFilter: PolicyPriority | "all";
-  onPriorityFilterChange: (value: PolicyPriority | "all") => void;
-  categories: string[];
   onReset: () => void;
 }
 
@@ -30,11 +25,6 @@ export function FilterControls({
   onSearchTermChange,
   statusFilter,
   onStatusFilterChange,
-  categoryFilter,
-  onCategoryFilterChange,
-  priorityFilter,
-  onPriorityFilterChange,
-  categories,
   onReset,
 }: FilterControlsProps) {
   return (
@@ -62,43 +52,9 @@ export function FilterControls({
           </SelectTrigger>
           <SelectContent>
             <SelectItem value="all">All statuses</SelectItem>
-            <SelectItem value="Compliant">Compliant</SelectItem>
-            <SelectItem value="Not Compliant">Not compliant</SelectItem>
-            <SelectItem value="Outdated">Outdated</SelectItem>
-          </SelectContent>
-        </Select>
-
-        <Select
-          value={categoryFilter}
-          onValueChange={(value) => onCategoryFilterChange(value)}
-        >
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Category" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">All categories</SelectItem>
-            {categories.map((category) => (
-              <SelectItem key={category} value={category}>
-                {category}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-
-        <Select
-          value={priorityFilter}
-          onValueChange={(value) =>
-            onPriorityFilterChange(value as PolicyPriority | "all")
-          }
-        >
-          <SelectTrigger className="w-[160px]">
-            <SelectValue placeholder="Priority" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">All priorities</SelectItem>
-            <SelectItem value="High">High</SelectItem>
-            <SelectItem value="Medium">Medium</SelectItem>
-            <SelectItem value="Low">Low</SelectItem>
+            <SelectItem value="Fully Compliant">Fully Compliant</SelectItem>
+            <SelectItem value="Slightly Compliant">Slightly Compliant</SelectItem>
+            <SelectItem value="Non-Existent">Non-Existent</SelectItem>
           </SelectContent>
         </Select>
 

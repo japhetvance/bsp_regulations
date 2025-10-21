@@ -4,14 +4,15 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import type { PolicyStatus } from "@/types/policy";
 
 const STATUS_VARIANTS: Record<string, string> = {
-  compliant: "bg-emerald-500/10 text-emerald-600 border-emerald-200",
-  "not compliant": "bg-destructive/10 text-destructive border-destructive/40",
-  outdated: "bg-amber-500/10 text-amber-600 border-amber-200",
+  "fully compliant": "bg-emerald-500/10 text-emerald-600 border-emerald-200",
+  "slightly compliant": "bg-amber-500/10 text-amber-600 border-amber-200",
+  "non-existent": "bg-neutral-500/10 text-neutral-600 border-neutral-200",
 };
 
-export type PolicyStatus = "Compliant" | "Not Compliant" | "Outdated";
+export type PolicyStatus = "Fully Compliant" | "Slightly Compliant" | "Non-Existent";
 
 interface StatusBadgeProps {
   status: PolicyStatus;
