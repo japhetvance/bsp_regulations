@@ -62,7 +62,7 @@ function getSummary(policies: Policy[]) {
 const STATUS_COLORS: Record<PolicyStatus, string> = {
   "Fully Compliant": "bg-emerald-500/10 text-emerald-700 border-emerald-200",
   "Slightly Compliant": "bg-amber-500/10 text-amber-700 border-amber-200",
-  "Non-Existent": "bg-neutral-500/10 text-neutral-600 border-neutral-200",
+  "Non-Existent": "bg-red-500/10 text-red-700 border-red-200",
 };
 
 export default async function ComplianceDashboard() {
