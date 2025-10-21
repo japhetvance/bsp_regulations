@@ -1,18 +1,63 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import { Mail } from "lucide-react";
+
+import { EmailModal } from "@/components/email-modal";
+
 interface Report {
   Category: string;
-  'Form No.': string;
-  'MOR Ref.': string;
-  'Report Title': string;
+  "Form No.": string;
+  "MOR Ref.": string;
+  "Report Title": string;
   Frequency: string;
-  'Submission Deadline': string;
-  'Submission Procedure / E-mail Address': string;
+  "Submission Deadline": string;
+  "Submission Procedure / E-mail Address": string;
 }
 
 interface ReportCardProps {
   report: Report;
 }
 
+function extractEmailAddress(input: string) {
+  const match = input.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i);
+  return match ? match[0] : "";
+}
+
 export default function ReportCard({ report }: ReportCardProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [emailTo, setEmailTo] = useState("");
+  const [emailSubject, setEmailSubject] = useState("");
+  const [emailMessage, setEmailMessage] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
+
+  const submissionInfo = report["Submission Procedure / E-mail Address"];
+
+  const extractedEmail = useMemo(() => {
+    if (!submissionInfo) {
+      return "";
+    }
+
+    return extractEmailAddress(submissionInfo);
+  }, [submissionInfo]);
+
+  const handleOpenModal = () => {
+    setEmailSent(false);
+    setEmailTo(extractedEmail);
+    setEmailSubject(report["Report Title"] ?? "");
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleSendEmail = () => {
+    setIsModalOpen(false);
+    setEmailMessage("");
+    setEmailSent(true);
+  };
+
   const getFrequencyColor = (frequency: string) => {
     switch (frequency.toLowerCase()) {
       case 'quarterly':
@@ -77,11 +122,35 @@ export default function ReportCard({ report }: ReportCardProps) {
 
       {report['Submission Procedure / E-mail Address'] && (
         <div className="pt-4 border-t border-gray-200">
-          <p className="text-sm text-gray-600">
-            <span className="font-medium">Submission:</span> {report['Submission Procedure / E-mail Address']}
-          </p>
+          <div className="flex items-center justify-between gap-3">
+            <p className="text-sm text-gray-600">
+              <span className="font-medium">Submission:</span> {report['Submission Procedure / E-mail Address']}
+            </p>
+            <button
+              type="button"
+              onClick={handleOpenModal}
+              className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-gray-600 transition hover:border-blue-500 hover:text-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/40 focus-visible:ring-offset-2"
+              aria-label="Send email"
+            >
+              <Mail className="h-4 w-4" />
+            </button>
+          </div>
+          {emailSent && (
+            <p className="mt-2 text-sm font-medium text-green-600">Email sent for demo purposes.</p>
+          )}
         </div>
       )}
+      <EmailModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onSend={handleSendEmail}
+        to={emailTo}
+        onToChange={setEmailTo}
+        subject={emailSubject}
+        onSubjectChange={setEmailSubject}
+        message={emailMessage}
+        onMessageChange={setEmailMessage}
+      />
     </div>
   );
 }
