@@ -66,6 +66,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
             policy.bspReference,
           policy.compliance_Gap,
           policy.subject,
+          policy.effectiveDate,
           policy.policy,
           ]
             .join(" ")
@@ -163,6 +164,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                     </Button>
                   </TableHead>
                 ))}
+                <TableHead className="w-[140px]">Effective Date</TableHead>
                 <TableHead className="w-[200px]">BSP Reference</TableHead>
               </TableRow>
             </TableHeader>
@@ -200,6 +202,9 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                           isExpanded={isStatusExpanded}
                         />
                       </TableCell>
+                      <TableCell className="whitespace-nowrap text-sm text-neutral-700">
+                        {policy.effectiveDate}
+                      </TableCell>
                       <TableCell>
                         <a
                           href={`/pdfs/${policy.bspIssuance}.pdf`}
@@ -215,14 +220,8 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
 
                     {isPolicyExpanded ? (
                       <TableRow>
-                        <TableCell colSpan={3} className="bg-neutral-50">
+                        <TableCell colSpan={4} className="bg-neutral-50">
                           <div className="flex flex-col gap-2 p-4">
-                            <div className="flex flex-col gap-1 text-sm text-neutral-700">
-                              <span className="font-semibold text-neutral-900">
-                                Effective Date
-                              </span>
-                              <span>{policy.effectiveDate}</span>
-                            </div>
                             <div className="flex flex-col gap-1 text-sm text-neutral-700">
                               <span className="font-semibold text-neutral-900">
                                 Policy
@@ -238,7 +237,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
 
                     {isStatusExpanded ? (
                       <TableRow>
-                        <TableCell colSpan={3} className="bg-neutral-50">
+                        <TableCell colSpan={4} className="bg-neutral-50">
                           <div className="flex flex-col gap-2 p-4">
                             <p className="whitespace-pre-wrap text-sm text-neutral-700">
                               {formatMultilineText(policy.compliance_Gap)}
