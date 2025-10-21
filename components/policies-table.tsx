@@ -203,7 +203,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                       </TableCell>
                       <TableCell>
                         <a
-                          href={"https://www.bsp.gov.ph"}
+                          href={`/pdfs/${policy.bspIssuance}.pdf`}
                           target="_blank"
                           rel="noreferrer"
                           className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
