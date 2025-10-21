@@ -5,11 +5,13 @@ export type PolicyPriority = "High" | "Medium" | "Low";
 export interface Policy {
   id: string;
   title: string;
+  policyNumber: string;
+  subject: string;
+  effectiveDate: string;
+  policy: string;
   status: PolicyStatus;
-  policyDetails: string;
-  complianceGap: string;
+  compliance_Gap: string;
   bspIssuance: string;
   bspReference: string;
-  policyText: string;
 }
 

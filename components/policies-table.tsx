@@ -39,11 +39,6 @@ const STATUS_ORDER: Record<PolicyStatus, number> = {
   "Non-Existent": 3,
 };
 
-function extractPolicyBody(details: string): string {
-  const afterNumber = details.replace(/^Policy Number:\s*[^\s]+\s*/, "");
-  return formatMultilineText(afterNumber.trim());
-}
-
 function formatMultilineText(text: string): string {
   if (!text) return "";
   return text
@@ -64,13 +59,14 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
   const filteredData = useMemo(() => {
     const normalizedSearch = searchTerm.trim().toLowerCase();
 
-    return data.filter((policy) => {
+  return data.filter((policy) => {
       const matchesSearch = normalizedSearch
         ? [
             policy.title,
             policy.bspReference,
-            policy.complianceGap,
-            policy.policyDetails,
+          policy.compliance_Gap,
+          policy.subject,
+          policy.policy,
           ]
             .join(" ")
             .toLowerCase()
@@ -156,7 +152,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                       className="-ml-2 flex items-center gap-1 text-sm font-semibold"
                       onClick={() => handleSort(columnKey)}
                     >
-                      {columnKey === "title" ? "Policy" : "Status"}
+                      {columnKey === "title" ? "Policy Number" : "Status"}
                       {sortState.key === columnKey ? (
                         sortState.direction === "asc" ? (
                           <ChevronUp className="h-4 w-4" />
@@ -192,6 +188,9 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                           aria-expanded={isPolicyExpanded}
                         >
                           {policy.title}
+                          <span className="text-xs font-normal text-neutral-500">
+                            {policy.subject}
+                          </span>
                         </button>
                       </TableCell>
                       <TableCell>
@@ -218,9 +217,20 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                       <TableRow>
                         <TableCell colSpan={3} className="bg-neutral-50">
                           <div className="flex flex-col gap-2 p-4">
-                            <p className="whitespace-pre-wrap text-sm text-neutral-700">
-                              {extractPolicyBody(policy.policyDetails)}
-                            </p>
+                            <div className="flex flex-col gap-1 text-sm text-neutral-700">
+                              <span className="font-semibold text-neutral-900">
+                                Effective Date
+                              </span>
+                              <span>{policy.effectiveDate}</span>
+                            </div>
+                            <div className="flex flex-col gap-1 text-sm text-neutral-700">
+                              <span className="font-semibold text-neutral-900">
+                                Policy
+                              </span>
+                              <p className="whitespace-pre-wrap">
+                                {formatMultilineText(policy.policy)}
+                              </p>
+                            </div>
                           </div>
                         </TableCell>
                       </TableRow>
@@ -231,7 +241,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                         <TableCell colSpan={3} className="bg-neutral-50">
                           <div className="flex flex-col gap-2 p-4">
                             <p className="whitespace-pre-wrap text-sm text-neutral-700">
-                              {formatMultilineText(policy.complianceGap)}
+                              {formatMultilineText(policy.compliance_Gap)}
                             </p>
                           </div>
                         </TableCell>

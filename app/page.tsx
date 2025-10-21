@@ -6,23 +6,25 @@ import { Policy, PolicyStatus } from "@/types/policy";
 import NavigationButton from "../components/NavigationButton";
 
 async function getPolicies(): Promise<Policy[]> {
-  const dataPath = path.join(process.cwd(), "data", "rural_bank.json");
+  const dataPath = path.join(process.cwd(), "data", "rural_bank_docs.json");
   const raw = await fs.readFile(dataPath, "utf-8");
   const rawData = JSON.parse(raw) as Array<Record<string, string>>;
 
   return rawData.map((item, index) => {
     const complianceStatus = normalizeStatus(item["Compliance_Status"]);
-    const policyNumber = extractPolicyNumber(item["PolicyDetails"]);
+    const policyNumber = item["Policy Number"];
 
     return {
       id: `${policyNumber}-${index}`,
-      title: `Policy Number: ${policyNumber}`,
+      title: item["Policy Number"],
+      policyNumber: item["Policy Number"],
+      subject: item["Subject"],
+      effectiveDate: item["Effective Date"],
+      policy: item["Policy"],
       status: complianceStatus,
-      policyDetails: item["PolicyDetails"],
-      complianceGap: item["Compliance_Gap"],
+      compliance_Gap: item["Compliance_Gap"],
       bspIssuance: item["BSP Issuance"],
       bspReference: `BSP Circular ${item["BSP Issuance"]}`,
-      policyText: item["PolicyText"],
     } satisfies Policy;
   });
 }
@@ -37,11 +39,6 @@ function normalizeStatus(status: string): PolicyStatus {
   }
 
   return "Non-Existent";
-}
-
-function extractPolicyNumber(policyDetails: string): string {
-  const match = policyDetails.match(/Policy Number:\s*([^\s]+)/i);
-  return match ? match[1] : `Unknown-${Math.random().toString(36).slice(2, 7)}`;
 }
 
 function getSummary(policies: Policy[]) {
