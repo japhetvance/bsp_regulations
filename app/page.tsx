@@ -5,6 +5,7 @@ import { PoliciesTable } from "@/components/policies-table";
 import { Policy, PolicyStatus } from "@/types/policy";
 import NavigationButton from "../components/NavigationButton";
 import Logo from "@/components/Logo";
+import { getStatusDisplayLabel } from "@/lib/utils";
 
 async function getPolicies(): Promise<Policy[]> {
   const dataPath = path.join(process.cwd(), "data", "rural_bank_docs.json");
@@ -117,7 +118,7 @@ export default async function ComplianceDashboard() {
                 <span
                   className={`mt-2 inline-flex w-fit items-center rounded-full px-2 py-1 text-xs font-medium ${STATUS_COLORS[status as PolicyStatus]}`}
                 >
-                  {status}
+                  {getStatusDisplayLabel(status as PolicyStatus)}
                 </span>
               </div>
             ))}

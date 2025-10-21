@@ -2,7 +2,7 @@
 
 import { ChevronDown, ChevronRight } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+import { cn, getStatusDisplayLabel } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 // Removed `import type { PolicyStatus } from "@/types/policy";` to resolve import conflict
 
@@ -42,7 +42,7 @@ export function StatusBadge({ status, onClick, isExpanded }: StatusBadgeProps) {
           aria-expanded={isExpanded}
         >
           <span>
-            {normalizedStatus === "non-existent" ? "Non-Existent" : status}
+            {getStatusDisplayLabel(status)}
           </span>
           {isExpanded ? (
             <ChevronDown className="h-3 w-3" aria-hidden="true" />
@@ -56,7 +56,7 @@ export function StatusBadge({ status, onClick, isExpanded }: StatusBadgeProps) {
 
   return (
     <Badge className={cn("capitalize border", variant)}>
-      {normalizedStatus === "non-existent" ? "Non-Existent" : status}
+      {getStatusDisplayLabel(status)}
     </Badge>
   );
 }

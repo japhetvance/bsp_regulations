@@ -53,8 +53,8 @@ export function FilterControls({
           <SelectContent>
             <SelectItem value="all">All statuses</SelectItem>
             <SelectItem value="Fully Compliant">Fully Compliant</SelectItem>
-            <SelectItem value="Slightly Compliant">Slightly Compliant</SelectItem>
-            <SelectItem value="Non-Existent">Non-Existent</SelectItem>
+            <SelectItem value="Slightly Compliant">Partial Compliance</SelectItem>
+            <SelectItem value="Non-Existent">NA - Information Only</SelectItem>
           </SelectContent>
         </Select>
 
