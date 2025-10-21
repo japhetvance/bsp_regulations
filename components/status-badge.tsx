@@ -4,7 +4,7 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
-import type { PolicyStatus } from "@/types/policy";
+// Removed `import type { PolicyStatus } from "@/types/policy";` to resolve import conflict
 
 const STATUS_VARIANTS: Record<string, string> = {
   "fully compliant": "bg-emerald-500/10 text-emerald-600 border-emerald-200",
