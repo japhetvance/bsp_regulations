@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
+import Image from "next/image";
 
 import { PoliciesTable } from "@/components/policies-table";
 import { Policy, PolicyStatus } from "@/types/policy";
@@ -73,16 +74,25 @@ export default async function ComplianceDashboard() {
     <main className="mx-auto flex min-h-screen max-w-6xl flex-col gap-10 px-6 py-10">
       <section className="flex flex-col gap-4 border-b border-neutral-200 pb-10">
         <div className="space-y-4">
-          <div>
-            <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
-              Rural Bank Compliance Command Center
-            </h1>
-            <p className="mt-2 max-w-3xl text-sm text-neutral-600">
-              Monitors mandatory policies for rural banking operations under BSP
-              supervision. Updated by the Compliance Officer to ensure
-              adherence to prudential, AML/CFT, governance, and consumer
-              protection requirements.
-            </p>
+          <div className="space-y-4">
+            <Image 
+              src="/logo.png" 
+              alt="Etibank Logo" 
+              width={280} 
+              height={120}
+              className="h-auto"
+            />
+            <div>
+              <h1 className="text-3xl font-semibold tracking-tight text-neutral-900">
+                Rural Bank Compliance Command Center
+              </h1>
+              <p className="mt-2 max-w-3xl text-sm text-neutral-600">
+                Monitors mandatory policies for rural banking operations under BSP
+                supervision. Updated by the Compliance Officer to ensure
+                adherence to prudential, AML/CFT, governance, and consumer
+                protection requirements.
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

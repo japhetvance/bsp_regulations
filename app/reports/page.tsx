@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { format } from 'date-fns';
+import Image from 'next/image';
 import ReportCard from '@/components/ReportCard';
 import SearchFilters from '@/components/SearchFilters';
 import Pagination from '@/components/Pagination';
@@ -95,10 +96,19 @@ export default function BSPReportsDashboard() {
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900">BSP Regulatory Reports Dashboard</h1>
-              <p className="text-gray-600 mt-1">Manage and track Bangko Sentral ng Pilipinas regulatory reports</p>
+          <div className="flex justify-between items-start py-6">
+            <div className="space-y-4">
+              <Image 
+                src="/logo.png" 
+                alt="Etibank Logo" 
+                width={280} 
+                height={120}
+                className="h-auto"
+              />
+              <div>
+                <h1 className="text-3xl font-bold text-gray-900">BSP Regulatory Reports Dashboard</h1>
+                <p className="text-gray-600 mt-1">Manage and track Bangko Sentral ng Pilipinas regulatory reports</p>
+              </div>
             </div>
             <div className="flex items-center gap-4">
               <NavigationButton href="/" label="View Compliance Dashboard" />
