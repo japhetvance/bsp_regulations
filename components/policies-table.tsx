@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -214,7 +214,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                 const isExpanded = expandedRow === policy.id;
 
                 return (
-                  <>
+                  <Fragment key={policy.id}>
                     <TableRow key={policy.id} className="align-top">
                       <TableCell className="font-medium">
                         <div className="flex flex-col gap-1">
@@ -299,7 +299,7 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                         </TableCell>
                       </TableRow>
                     ) : null}
-                  </>
+                  </Fragment>
                 );
               })}
             </TableBody>
