@@ -205,7 +205,6 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                   </TableHead>
                 ))}
                 <TableHead className="w-[180px]">BSP Reference</TableHead>
-                <TableHead className="w-[120px] text-right">Proof / Reason</TableHead>
               </TableRow>
             </TableHeader>
 
@@ -226,7 +225,15 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                       </TableCell>
                       <TableCell>{policy.category}</TableCell>
                       <TableCell>
-                        <StatusBadge status={policy.status} />
+                        <StatusBadge
+                          status={policy.status}
+                          onClick={() =>
+                            setExpandedRow((prev) =>
+                              prev === policy.id ? null : policy.id,
+                            )
+                          }
+                          isExpanded={isExpanded}
+                        />
                       </TableCell>
                       <TableCell>
                         <span
@@ -273,24 +280,12 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                           <ExternalLink className="h-3 w-3" />
                         </a>
                       </TableCell>
-                      <TableCell className="text-right">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() =>
-                            setExpandedRow((prev) =>
-                              prev === policy.id ? null : policy.id,
-                            )
-                          }
-                        >
-                          {isExpanded ? "Hide" : "View"}
-                        </Button>
-                      </TableCell>
+                      
                     </TableRow>
 
                     {isExpanded ? (
                       <TableRow key={`${policy.id}-details`}>
-                        <TableCell colSpan={8} className="bg-neutral-50">
+                        <TableCell colSpan={7} className="bg-neutral-50">
                           <div className="flex flex-col gap-2 p-4">
                             <p className="text-sm text-neutral-700">
                               {policy.proof}
