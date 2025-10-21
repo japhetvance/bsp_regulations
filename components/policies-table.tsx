@@ -15,6 +15,11 @@ import { StatusBadge } from "@/components/status-badge";
 import { FilterControls } from "@/components/filter-controls";
 import type { Policy, PolicyStatus } from "@/types/policy";
 import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
 
@@ -42,9 +47,22 @@ const STATUS_ORDER: Record<PolicyStatus, number> = {
 function formatMultilineText(text: string): string {
   if (!text) return "";
   return text
-    .replace(/\s{2,}-/g, "\n-" )
+    .replace(/\s{2,}-/g, "\n-")
     .replace(/\s{2,}/g, "\n")
     .trim();
+}
+
+function parseEffectiveDate(rawDate: string) {
+  const match = rawDate.match(/^(.*?)\s*\((.*)\)$/);
+  if (!match) {
+    return { displayDate: rawDate, note: null };
+  }
+
+  const [, date, note] = match;
+  return {
+    displayDate: date.trim(),
+    note: note.trim(),
+  };
 }
 
 export function PoliciesTable({ data }: PoliciesTableProps) {
@@ -203,7 +221,24 @@ export function PoliciesTable({ data }: PoliciesTableProps) {
                         />
                       </TableCell>
                       <TableCell className="whitespace-nowrap text-sm text-neutral-700">
-                        {policy.effectiveDate}
+                        {(() => {
+                          const { displayDate, note } = parseEffectiveDate(policy.effectiveDate);
+
+                          if (!note) {
+                            return displayDate;
+                          }
+
+                          return (
+                            <Tooltip>
+                              <TooltipTrigger asChild>
+                                <span className="cursor-help underline decoration-dotted underline-offset-2">
+                                  {displayDate}
+                                </span>
+                              </TooltipTrigger>
+                              <TooltipContent>{note}</TooltipContent>
+                            </Tooltip>
+                          );
+                        })()}
                       </TableCell>
                       <TableCell>
                         <a
